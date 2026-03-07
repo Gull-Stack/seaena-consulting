@@ -1,0 +1,50 @@
+{
+  "name": "Seaena Consulting",
+  "tagline": "Strategic Consulting That Scales Enterprise Growth",
+  "description": "Trusted by industry leaders like Hyperbound. Louis & Rob's proven methodologies deliver 247% average revenue growth in 18 months. Enterprise consulting for SaaS and technology companies.",
+  "url": "https://www.seaena.com",
+  "email": "hello@seaena.com",
+  "phone": "(555) 123-4567",
+  "address": {
+    "street": "123 Business Plaza",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94102"
+  },
+  "gaId": "G-XXXXXXXXXX",
+  "serviceAreas": [
+    "United States",
+    "Europe",
+    "Asia Pacific"
+  ],
+  "socials": {
+    "linkedin": "https://linkedin.com/company/seaena-consulting"
+  },
+  "founders": [
+    {
+      "name": "Louis",
+      "title": "Co-Founder & Strategy Partner",
+      "experience": "15+ years scaling enterprise businesses",
+      "background": "Former VP of Strategy at leading tech firms",
+      "achievement": "Led $500M+ in growth initiatives",
+      "education": "MBA from top-tier university"
+    },
+    {
+      "name": "Rob",
+      "title": "Co-Founder & Operations Partner",
+      "experience": "12+ years operational excellence",
+      "background": "Former COO with engineering + MBA background",
+      "achievement": "Automated operations for 200+ companies",
+      "education": "Engineering degree + MBA"
+    }
+  ],
+  "results": {
+    "averageGrowth": "247%",
+    "timeframe": "18 months",
+    "efficiencyGain": "34%",
+    "clientRetention": "94%",
+    "projectsCompleted": "47+",
+    "totalRevenue": "$2.4B+",
+    "averageROI": "847%"
+  }
+}

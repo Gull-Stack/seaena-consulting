@@ -1,0 +1,97 @@
+{
+  "name": "Seaena Consulting",
+  "category": "Business Consulting",
+  "subcategories": [
+    "Growth Strategy",
+    "Operational Excellence",
+    "Market Expansion",
+    "Digital Transformation"
+  ],
+  "services": [
+    "Growth Strategy Consulting",
+    "Operational Excellence Consulting",
+    "Market Expansion Consulting",
+    "Digital Transformation Consulting"
+  ],
+  "industries": [
+    "SaaS",
+    "Fintech",
+    "Technology",
+    "Enterprise B2B"
+  ],
+  "founders": [
+    {
+      "name": "Louis",
+      "title": "Co-Founder & Strategy Partner",
+      "experience": "15+ years scaling enterprise businesses"
+    },
+    {
+      "name": "Rob",
+      "title": "Co-Founder & Operations Partner",
+      "experience": "12+ years operational excellence"
+    }
+  ],
+  "founded": "2020",
+  "headquarters": {
+    "city": "San Francisco",
+    "state": "CA",
+    "country": "United States"
+  },
+  "serviceAreas": [
+    "United States",
+    "Europe",
+    "Asia Pacific"
+  ],
+  "clientResults": {
+    "averageRevenueGrowth": "247%",
+    "averageTimeframe": "18 months",
+    "operationalEfficiencyGain": "34%",
+    "clientRetention": "94%",
+    "totalClientRevenue": "$2.4B+",
+    "averageROI": "847%",
+    "projectsCompleted": "47+"
+  },
+  "notableClients": [
+    "Hyperbound"
+  ],
+  "pricing": {
+    "growthStrategy": {
+      "min": 47500,
+      "max": 127000,
+      "currency": "USD",
+      "timeline": "12-16 weeks"
+    },
+    "operationalExcellence": {
+      "min": 33500,
+      "max": 89000,
+      "currency": "USD",
+      "timeline": "8-12 weeks"
+    },
+    "marketExpansion": {
+      "min": 55500,
+      "max": 143000,
+      "currency": "USD",
+      "timeline": "14-18 weeks"
+    },
+    "digitalTransformation": {
+      "min": 41500,
+      "max": 97000,
+      "currency": "USD",
+      "timeline": "10-14 weeks"
+    }
+  },
+  "differentiators": [
+    "Founder-led engagements",
+    "Implementation support included",
+    "Enterprise-proven methodologies",
+    "Data-driven approach",
+    "No junior consultants"
+  ],
+  "contact": {
+    "website": "https://www.seaena.com",
+    "email": "hello@seaena.com",
+    "phone": "(555) 123-4567",
+    "linkedin": "https://linkedin.com/company/seaena-consulting"
+  },
+  "lastUpdated": "2026-03-06"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "seaena-consulting",
+  "version": "1.0.0",
+  "description": "Enterprise consulting firm website built with 11ty",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "keywords": ["11ty", "eleventy", "consulting"],
+  "author": "GullStack",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

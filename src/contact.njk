@@ -1,0 +1,197 @@
+---
+layout: base.njk
+title: Contact Us - Schedule Strategic Session
+description: Schedule a confidential strategic consultation with Louis & Rob. Discuss your enterprise growth objectives. Phone (555) 123-4567 or email hello@seaena.com
+breadcrumbs:
+  - name: Contact
+    url: /contact/
+---
+
+{% block schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "{{ site.name }}",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "{{ site.phone }}",
+      "contactType": "Customer Service",
+      "email": "{{ site.email }}",
+      "availableLanguage": "English"
+    }
+  }
+}
+</script>
+{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1>Schedule Strategic Session</h1>
+      <p class="hero-subheading">Confidential consultation with Louis & Rob to discuss your enterprise growth objectives</p>
+    </div>
+  </div>
+</section>
+
+<section class="bg-white">
+  <div class="container">
+    <div class="grid-2">
+      <!-- Contact Form -->
+      <div>
+        <h2>Get Started</h2>
+        <p>Complete this form to schedule a 30-minute strategic consultation. We'll discuss your business objectives, challenges, and how Seaena can help.</p>
+
+        <form class="mt-2" id="contact-form" action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+
+          <div class="form-group">
+            <label for="company">Company Name *</label>
+            <input type="text" id="company" name="company" required>
+          </div>
+
+          <div class="form-group">
+            <label for="revenue">Annual Revenue Range</label>
+            <select id="revenue" name="revenue">
+              <option value="">Select range</option>
+              <option value="under-5m">Under $5M</option>
+              <option value="5m-20m">$5M - $20M</option>
+              <option value="20m-50m">$20M - $50M</option>
+              <option value="50m-100m">$50M - $100M</option>
+              <option value="100m-plus">$100M+</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="service">Service Interest</label>
+            <select id="service" name="service">
+              <option value="">Select service</option>
+              <option value="growth-strategy">Growth Strategy</option>
+              <option value="operational-excellence">Operational Excellence</option>
+              <option value="market-expansion">Market Expansion</option>
+              <option value="digital-transformation">Digital Transformation</option>
+              <option value="multiple">Multiple Services</option>
+              <option value="unsure">Not Sure Yet</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Tell Us About Your Objectives *</label>
+            <textarea id="message" name="message" required placeholder="What are your primary business objectives? What challenges are you facing?"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">Submit Request</button>
+
+          <p class="mt-1" style="font-size: 0.9rem; color: var(--medium-gray);">We typically respond within 24 hours. All consultations are confidential.</p>
+        </form>
+      </div>
+
+      <!-- Contact Information -->
+      <div>
+        <h2>Direct Contact</h2>
+        <p>Prefer to reach out directly? Contact us using the information below.</p>
+
+        <div class="card mt-2">
+          <h3>Phone</h3>
+          <p><a href="tel:{{ site.phone }}" style="font-size: 1.25rem; font-weight: 600;">{{ site.phone }}</a></p>
+          <p style="color: var(--medium-gray);">Monday - Friday, 9am - 6pm PST</p>
+        </div>
+
+        <div class="card mt-2">
+          <h3>Email</h3>
+          <p><a href="mailto:{{ site.email }}" style="font-size: 1.25rem; font-weight: 600;">{{ site.email }}</a></p>
+          <p style="color: var(--medium-gray);">We respond within 24 hours</p>
+        </div>
+
+        <div class="card mt-2">
+          <h3>LinkedIn</h3>
+          <p><a href="{{ site.socials.linkedin }}" target="_blank" rel="noopener noreferrer" style="font-size: 1.25rem; font-weight: 600;">Connect on LinkedIn</a></p>
+          <p style="color: var(--medium-gray);">Follow for insights and updates</p>
+        </div>
+
+        <div class="card mt-2">
+          <h3>Office</h3>
+          <p>{{ site.address.street }}<br>
+          {{ site.address.city }}, {{ site.address.state }} {{ site.address.zip }}</p>
+          <p style="color: var(--medium-gray); margin-top: 0.5rem;">Serving enterprise clients globally</p>
+        </div>
+
+        <div class="mt-2">
+          <h3>What to Expect</h3>
+          <p>During our initial consultation, we'll:</p>
+          <ul>
+            <li>Understand your business objectives and challenges</li>
+            <li>Discuss potential engagement approaches</li>
+            <li>Share relevant case studies and results</li>
+            <li>Provide preliminary recommendations</li>
+            <li>Outline next steps if there's a fit</li>
+          </ul>
+          <p class="mt-1">All consultations are confidential and there's no obligation to engage.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-light">
+  <div class="container">
+    <div class="section-header">
+      <h2>Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What happens during the initial consultation?
+          <span class="arrow">▼</span>
+        </button>
+        <div class="faq-answer">
+          <p>The initial consultation is a 30-minute conversation to understand your business objectives, discuss challenges, and explore whether Seaena is a good fit for your needs. It's confidential with no obligation.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How quickly can we get started?
+          <span class="arrow">▼</span>
+        </button>
+        <div class="faq-answer">
+          <p>After our initial consultation and agreement on scope, we typically begin engagements within 2-3 weeks. Timeline depends on our current capacity and your organizational readiness.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Do you work with companies outside the US?
+          <span class="arrow">▼</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. We work with enterprise clients globally. Our engagements are primarily conducted remotely with strategic in-person sessions as needed.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What size companies do you work with?
+          <span class="arrow">▼</span>
+        </button>
+        <div class="faq-answer">
+          <p>We primarily work with companies that have achieved product-market fit and are ready to scale, typically with $5M+ in annual revenue. Our methodologies are designed for enterprise and high-growth companies.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
