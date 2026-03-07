@@ -41,7 +41,7 @@
   <link rel="stylesheet" href="/css/styles.css">
 
   <!-- Page-specific schema (injected by each page) -->
-  {% block schema %}{% endblock %}
+  {{ schema | safe }}
 
   <!-- Organization Schema (global — every page) -->
   <script type="application/ld+json">
@@ -102,7 +102,7 @@
   <a href="#main" class="skip-link">Skip to main content</a>
   {% include "header.njk" %}
   <main id="main">
-    {% block content %}{% endblock %}
+    {{ content | safe }}
   </main>
   {% include "footer.njk" %}
   <script src="/js/main.js"></script>
