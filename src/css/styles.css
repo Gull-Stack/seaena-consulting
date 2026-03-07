@@ -902,3 +902,136 @@ section {
 .mt-1 { margin-top: 1rem; }
 .mt-2 { margin-top: 2rem; }
 .mt-3 { margin-top: 3rem; }
+
+/* ========================================
+   VILLAIN SECTION
+   ======================================== */
+.villain-section {
+  background: linear-gradient(135deg, #1a1f36 0%, #0f1225 100%);
+  padding: var(--section-pad) 0;
+  color: var(--white);
+}
+
+.villain-section .section-header h2 {
+  color: var(--white);
+}
+
+.villain-section .section-header p,
+.villain-section .section-subtitle {
+  color: rgba(255,255,255,0.7);
+}
+
+.villain-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.villain-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.5rem;
+  transition: var(--transition);
+}
+
+.villain-card:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(239,68,68,0.3);
+  transform: translateY(-2px);
+}
+
+.villain-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(239,68,68,0.12);
+  border-radius: 12px;
+  margin-bottom: 1.25rem;
+}
+
+.villain-icon svg {
+  stroke: #ef4444;
+}
+
+.villain-card h3 {
+  color: var(--white);
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.villain-card p {
+  color: rgba(255,255,255,0.65);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.villain-cta {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.villain-resolution {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .villain-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .villain-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ========================================
+   CARD IMAGES
+   ======================================== */
+.card-with-image {
+  overflow: hidden;
+  padding: 0;
+}
+
+.card-with-image .card-image {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+}
+
+.card-with-image .card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card-with-image:hover .card-image img {
+  transform: scale(1.05);
+}
+
+.card-with-image .card-icon,
+.card-with-image h3,
+.card-with-image p {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.card-with-image .card-icon {
+  margin-top: 1.25rem;
+}
+
+.card-with-image p:last-child {
+  padding-bottom: 1.5rem;
+}
