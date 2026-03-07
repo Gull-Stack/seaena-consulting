@@ -934,10 +934,19 @@ section {
   border-radius: var(--radius-lg);
   padding: 2rem 1.5rem;
   transition: var(--transition);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  position: relative;
 }
 
+.villain-card--strategy { background-image: url('/images/villain-strategy.png'); background-color: rgba(10,10,26,0.82); }
+.villain-card--theater { background-image: url('/images/villain-theater.png'); background-color: rgba(10,10,26,0.82); }
+.villain-card--scaling { background-image: url('/images/villain-scaling.png'); background-color: rgba(10,10,26,0.82); }
+.villain-card--data { background-image: url('/images/villain-data.png'); background-color: rgba(10,10,26,0.82); }
+
 .villain-card:hover {
-  background: rgba(255,255,255,0.08);
+  background-color: rgba(10,10,26,0.7);
   border-color: rgba(239,68,68,0.3);
   transform: translateY(-2px);
 }
