@@ -603,7 +603,7 @@ section { padding: var(--section-pad) 0; }
    UTILITY CLASSES
    ======================================== */
 .text-center { text-align: center; }
-.bg-light { background: var(--bg-surface); }
+.bg-light { background: var(--bg); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 .bg-white { background: var(--bg); }
 
 /* ========================================
