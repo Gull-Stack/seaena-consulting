@@ -2,7 +2,7 @@
   <div class="container">
     <div class="header-inner">
       <a href="/" class="logo">
-        <img src="/images/seaena-logo-new.png" alt="Seaena" height="36">
+        <img src="/images/seaena-logo-new.png" alt="Seaena" height="32">
       </a>
 
       <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
@@ -11,8 +11,17 @@
 
       <nav class="main-nav" aria-label="Main navigation">
         <ul class="nav-list">
-          <li><a href="/services/" class="{% if '/services/' in page.url %}active{% endif %}">Services</a></li>
-          <li><a href="/services/ai-agents/" class="{% if '/ai-agents/' in page.url %}active{% endif %}">AI Agents</a></li>
+          <li class="has-dropdown">
+            <button class="dropdown-toggle" aria-expanded="false">Services<span class="arrow">&#9662;</span></button>
+            <ul class="dropdown-menu">
+              <li><a href="/services/">All Services</a></li>
+              <li><a href="/services/growth-strategy/">Sales & Revenue Ops</a></li>
+              <li><a href="/services/operational-excellence/">AI Agents & Automation</a></li>
+              <li><a href="/services/market-expansion/">Global GTM Expansion</a></li>
+              <li><a href="/services/digital-transformation/">Team Enablement</a></li>
+            </ul>
+          </li>
+          <li><a href="/services/operational-excellence/" class="{% if '/operational-excellence/' in page.url %}active{% endif %}">AI Agents</a></li>
           <li><a href="/case-studies/" class="{% if '/case-studies/' in page.url %}active{% endif %}">Results</a></li>
           <li><a href="/about/" class="{% if '/about/' in page.url %}active{% endif %}">Our Story</a></li>
         </ul>
