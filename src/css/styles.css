@@ -44,7 +44,7 @@ body {
   font-size: 1rem;
   line-height: 1.7;
   color: var(--text-secondary);
-  background: var(--bg);
+  background: var(--bg) url('/images/ocean-bg.jpg') center top / cover no-repeat fixed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -100,10 +100,10 @@ section { padding: var(--section-pad) 0; }
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 1000;
-  background: hsla(225, 30%, 6%, 0.7);
+  background: hsla(225, 30%, 6%, 0.5);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid hsla(225, 15%, 18%, 0.5);
+  border-bottom: 1px solid hsla(225, 15%, 18%, 0.3);
 }
 .header-inner {
   display: flex;
@@ -334,8 +334,10 @@ section { padding: var(--section-pad) 0; }
 .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
 
 .card {
-  background: var(--bg-surface);
-  border: 1px solid var(--border);
+  background: hsla(225, 20%, 12%, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid hsla(225, 15%, 25%, 0.4);
   border-radius: var(--radius-lg);
   padding: 2.25rem 2rem;
   transition: all 0.3s var(--ease);
@@ -388,9 +390,10 @@ section { padding: var(--section-pad) 0; }
   margin-top: 3rem;
 }
 .villain-card {
-  background: hsla(225, 20%, 12%, 0.6);
+  background: hsla(225, 20%, 12%, 0.45);
   backdrop-filter: blur(12px);
-  border: 1px solid var(--border);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid hsla(225, 15%, 25%, 0.4);
   border-radius: var(--radius-lg);
   padding: 2rem 1.75rem;
   transition: all 0.3s var(--ease);
@@ -443,8 +446,9 @@ section { padding: var(--section-pad) 0; }
    TESTIMONIALS
    ======================================== */
 .testimonial {
-  background: var(--bg-surface);
-  border: 1px solid var(--border);
+  background: hsla(225, 20%, 12%, 0.5);
+  backdrop-filter: blur(12px);
+  border: 1px solid hsla(225, 15%, 25%, 0.4);
   border-radius: var(--radius-lg);
   padding: 3rem;
   max-width: 750px;
@@ -545,7 +549,8 @@ section { padding: var(--section-pad) 0; }
    FOOTER
    ======================================== */
 .site-footer {
-  background: var(--bg-surface);
+  background: hsla(225, 20%, 8%, 0.85);
+  backdrop-filter: blur(4px);
   border-top: 1px solid var(--border);
   padding: 4rem 0 2rem;
 }
@@ -603,8 +608,8 @@ section { padding: var(--section-pad) 0; }
    UTILITY CLASSES
    ======================================== */
 .text-center { text-align: center; }
-.bg-light { background: var(--bg-surface); }
-.bg-white { background: var(--bg); }
+.bg-light { background: hsla(225, 20%, 12%, 0.7); backdrop-filter: blur(2px); }
+.bg-white { background: transparent; }
 .mb-0 { margin-bottom: 0; }
 .mb-1 { margin-bottom: 1rem; }
 .mb-2 { margin-bottom: 2rem; }
