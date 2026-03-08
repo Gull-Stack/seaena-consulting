@@ -2,7 +2,7 @@
   <div class="container">
     <div class="header-inner">
       <a href="/" class="logo">
-        <span class="logo-text">{{ site.name }}</span>
+        <img src="/images/seaena-logo-new.png" alt="Seaena" height="36">
       </a>
 
       <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
@@ -11,23 +11,12 @@
 
       <nav class="main-nav" aria-label="Main navigation">
         <ul class="nav-list">
-          <li><a href="/" class="{% if page.url == '/' %}active{% endif %}">Home</a></li>
-          <li><a href="/about/" class="{% if '/about/' in page.url %}active{% endif %}">About</a></li>
-          <li class="has-dropdown">
-            <button class="dropdown-toggle" aria-expanded="false">Services<span class="arrow">▼</span></button>
-            <ul class="dropdown-menu">
-              <li><a href="/services/">All Services</a></li>
-              <li><a href="/services/growth-strategy/">Growth Strategy</a></li>
-              <li><a href="/services/operational-excellence/">Operational Excellence</a></li>
-              <li><a href="/services/market-expansion/">Market Expansion</a></li>
-              <li><a href="/services/digital-transformation/">Digital Transformation</a></li>
-            </ul>
-          </li>
-          <li><a href="/case-studies/" class="{% if '/case-studies/' in page.url %}active{% endif %}">Case Studies</a></li>
-          <li><a href="/insights/" class="{% if '/insights/' in page.url %}active{% endif %}">Insights</a></li>
-          <li><a href="/contact/" class="{% if '/contact/' in page.url %}active{% endif %}">Contact</a></li>
+          <li><a href="/services/" class="{% if '/services/' in page.url %}active{% endif %}">Services</a></li>
+          <li><a href="/services/ai-agents/" class="{% if '/ai-agents/' in page.url %}active{% endif %}">AI Agents</a></li>
+          <li><a href="/case-studies/" class="{% if '/case-studies/' in page.url %}active{% endif %}">Results</a></li>
+          <li><a href="/about/" class="{% if '/about/' in page.url %}active{% endif %}">Our Story</a></li>
         </ul>
-        <a href="/contact/" class="btn btn-primary nav-cta">Schedule Strategic Session</a>
+        <a href="/contact/" class="btn btn-primary nav-cta">Book a Call</a>
       </nav>
     </div>
   </div>
